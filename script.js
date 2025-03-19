@@ -6,7 +6,7 @@ const teamName = urlParams.get('team');
 document.getElementById('teamName').innerText = `${teamName} の結果`;
 
 // スプレッドシートからデータを引っ張る
-fetch('https://script.google.com/macros/s/【ここにGoogle Apps ScriptのURL】/exec?team=' + teamName)
+fetch('https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbyGWsM1rZxiBOS_YXghTUYk32acT2MEh6AFXnzKaBPwG9JtlIcu8XuwMyR6qpwKpjxK/exec/exec?team=' + teamName)
     .then(response => response.json())
     .then(data => {
         if (data.score) {
